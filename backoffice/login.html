@@ -4,30 +4,28 @@
         <meta charset="UTF-8" />
         <title>HOME</title>
         <link rel="stylesheet" href="styles.css">
+        <script type="module" src="login.js"></script>
     </head>
     <body>
     
     
         <header>
             <h1>backoffice</h1>
-            <button>register</button>
+            <a href="./register.html">register</a>
         </header>
         
         <main id="login">
-            <h2>bienvenido de vuelta</h2>
-            <form id="login-form">
-                <label>usuario:</label>
-                <input type="text" name="username" id="username"/>
-                <label>contraseña:</label>
-                <input type="password" name="password" id="password"/>
-                <button type="submit"/>log in</button>
+            <h2 class="chunk">bienvenido de vuelta</h2>
+            <form id="login-form" class="chunk">
+                <label for="email">e-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">contraseña:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">log in</button>
             </form>
-            <hr>
-            <div id="opciones">
-                <a href="index.html"> << pagina home</a>
-                <a href="register.html">pagina registro >> </a>
-            </div>
         </main>
         
+        
+    
     </body>
 </html>
